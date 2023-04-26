@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F85D839229F970C500ED92A0 /* VectorDatabaseExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D839129F970C500ED92A0 /* VectorDatabaseExampleApp.swift */; };
+		F85D839429F970C500ED92A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D839329F970C500ED92A0 /* ContentView.swift */; };
+		F85D839629F970C600ED92A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85D839529F970C600ED92A0 /* Assets.xcassets */; };
+		F85D839929F970C600ED92A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85D839829F970C600ED92A0 /* Preview Assets.xcassets */; };
+		F85D83A829F9B27500ED92A0 /* VectorNest in Frameworks */ = {isa = PBXBuildFile; productRef = F85D83A729F9B27500ED92A0 /* VectorNest */; };
+		F8B611B629F9D08B009E8953 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = F8B611B529F9D08B009E8953 /* OpenAIKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F85D838E29F970C500ED92A0 /* VectorDatabaseExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VectorDatabaseExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85D839129F970C500ED92A0 /* VectorDatabaseExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorDatabaseExampleApp.swift; sourceTree = "<group>"; };
+		F85D839329F970C500ED92A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F85D839529F970C600ED92A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F85D839829F970C600ED92A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F85D839A29F970C600ED92A0 /* VectorDatabaseExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VectorDatabaseExample.entitlements; sourceTree = "<group>"; };
+		F85D83A629F9B23900ED92A0 /* VectorNest */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = VectorNest; path = ..; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F85D838B29F970C500ED92A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85D83A829F9B27500ED92A0 /* VectorNest in Frameworks */,
+				F8B611B629F9D08B009E8953 /* OpenAIKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F85D838529F970C500ED92A0 = {
+			isa = PBXGroup;
+			children = (
+				F85D83A629F9B23900ED92A0 /* VectorNest */,
+				F85D839029F970C500ED92A0 /* VectorDatabaseExample */,
+				F85D838F29F970C500ED92A0 /* Products */,
+				F85D83A329F9839100ED92A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F85D838F29F970C500ED92A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F85D838E29F970C500ED92A0 /* VectorDatabaseExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F85D839029F970C500ED92A0 /* VectorDatabaseExample */ = {
+			isa = PBXGroup;
+			children = (
+				F85D839129F970C500ED92A0 /* VectorDatabaseExampleApp.swift */,
+				F85D839329F970C500ED92A0 /* ContentView.swift */,
+				F85D839529F970C600ED92A0 /* Assets.xcassets */,
+				F85D839A29F970C600ED92A0 /* VectorDatabaseExample.entitlements */,
+				F85D839729F970C600ED92A0 /* Preview Content */,
+			);
+			path = VectorDatabaseExample;
+			sourceTree = "<group>";
+		};
+		F85D839729F970C600ED92A0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F85D839829F970C600ED92A0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F85D83A329F9839100ED92A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F85D838D29F970C500ED92A0 /* VectorDatabaseExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F85D839D29F970C600ED92A0 /* Build configuration list for PBXNativeTarget "VectorDatabaseExample" */;
+			buildPhases = (
+				F85D838A29F970C500ED92A0 /* Sources */,
+				F85D838B29F970C500ED92A0 /* Frameworks */,
+				F85D838C29F970C500ED92A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VectorDatabaseExample;
+			packageProductDependencies = (
+				F85D83A729F9B27500ED92A0 /* VectorNest */,
+				F8B611B529F9D08B009E8953 /* OpenAIKit */,
+			);
+			productName = VectorDatabaseExample;
+			productReference = F85D838E29F970C500ED92A0 /* VectorDatabaseExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F85D838629F970C500ED92A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F85D838D29F970C500ED92A0 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = F85D838929F970C500ED92A0 /* Build configuration list for PBXProject "VectorDatabaseExample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F85D838529F970C500ED92A0;
+			packageReferences = (
+				F8B611B429F9D08B009E8953 /* XCRemoteSwiftPackageReference "openai-kit" */,
+			);
+			productRefGroup = F85D838F29F970C500ED92A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F85D838D29F970C500ED92A0 /* VectorDatabaseExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F85D838C29F970C500ED92A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85D839929F970C600ED92A0 /* Preview Assets.xcassets in Resources */,
+				F85D839629F970C600ED92A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F85D838A29F970C500ED92A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85D839429F970C500ED92A0 /* ContentView.swift in Sources */,
+				F85D839229F970C500ED92A0 /* VectorDatabaseExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F85D839B29F970C600ED92A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F85D839C29F970C600ED92A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F85D839E29F970C600ED92A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VectorDatabaseExample/VectorDatabaseExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VectorDatabaseExample/Preview Content\"";
+				DEVELOPMENT_TEAM = TPKP4XK352;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlingprotocol.VectorDatabaseExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F85D839F29F970C600ED92A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VectorDatabaseExample/VectorDatabaseExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VectorDatabaseExample/Preview Content\"";
+				DEVELOPMENT_TEAM = TPKP4XK352;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlingprotocol.VectorDatabaseExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F85D838929F970C500ED92A0 /* Build configuration list for PBXProject "VectorDatabaseExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85D839B29F970C600ED92A0 /* Debug */,
+				F85D839C29F970C600ED92A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F85D839D29F970C600ED92A0 /* Build configuration list for PBXNativeTarget "VectorDatabaseExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85D839E29F970C600ED92A0 /* Debug */,
+				F85D839F29F970C600ED92A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8B611B429F9D08B009E8953 /* XCRemoteSwiftPackageReference "openai-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dylanshine/openai-kit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F85D83A729F9B27500ED92A0 /* VectorNest */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VectorNest;
+		};
+		F8B611B529F9D08B009E8953 /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8B611B429F9D08B009E8953 /* XCRemoteSwiftPackageReference "openai-kit" */;
+			productName = OpenAIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F85D838629F970C500ED92A0 /* Project object */;
+}
