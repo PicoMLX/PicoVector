@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct VectorDatabaseExampleApp: App {
     var body: some Scene {
-        WindowGroup {
+        WindowGroup() {
             ContentView()
+                .navigationTitle("VectorNest Demo")
         }
     }
 }

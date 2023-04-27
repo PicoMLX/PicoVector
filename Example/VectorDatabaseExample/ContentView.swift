@@ -33,6 +33,12 @@ struct ContentView: View {
     
     var body: some View {
         
+        Text("VectorNest demo")
+            .fontWeight(.bold)
+            .font(.title)
+            .padding()
+            .foregroundColor(.purple)
+        
         Text(label)
             .frame(width: 120, height: 120)
             .fontWeight(.bold)
@@ -118,7 +124,7 @@ struct ContentView: View {
 
                             // Create prompt
                             let prompt = """
-                                Use the search results below. If the answer cannot be found, write "I don't know."
+                                Use the search results below. If the answer cannot be found, write "I can't find that information in the PDF."
 
                                 Search results:
                                 ===
