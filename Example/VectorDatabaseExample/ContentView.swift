@@ -76,7 +76,7 @@ struct ContentView: View {
                         
                         // Store embeddings in VectorNest
                         vectorDB.addDocument(chunks: chunks, vectors: embeddings.data.map({ $0.embedding }))
-                    } catch {
+                    } catch  {
                         self.error = error
                         showError = true
                     }

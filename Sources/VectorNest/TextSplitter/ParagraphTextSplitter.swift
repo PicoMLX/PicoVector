@@ -6,11 +6,9 @@
 //
 
 import Foundation
-import GPTEncoder
+import CleverBird
 
 public struct ParagraphTextSplitter: TextSplitter {
-    
-    static let encoder = GPTEncoder()
     
     public let lengthFunction: (String) -> Int
     
@@ -25,7 +23,14 @@ public struct ParagraphTextSplitter: TextSplitter {
         self.text = text
         self.chunkSize = chunkSize
         self.chunkOverlap = chunkOverlap
-        self.lengthFunction = { Self.encoder.encode(text: $0).count }
+        self.lengthFunction = {
+            do {
+                let encoder = try TokenEncoder(model: .gpt3)
+                return try encoder.encode(text: $0).count
+            } catch {
+                return Int.max
+            }
+        }
     }
     
     public func split() -> [String] {

@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F84FCC082A214BF300C6E221 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = F84FCC072A214BF300C6E221 /* OpenAIKit */; };
 		F85D839229F970C500ED92A0 /* VectorDatabaseExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D839129F970C500ED92A0 /* VectorDatabaseExampleApp.swift */; };
 		F85D839429F970C500ED92A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D839329F970C500ED92A0 /* ContentView.swift */; };
 		F85D839629F970C600ED92A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85D839529F970C600ED92A0 /* Assets.xcassets */; };
 		F85D839929F970C600ED92A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85D839829F970C600ED92A0 /* Preview Assets.xcassets */; };
 		F85D83A829F9B27500ED92A0 /* VectorNest in Frameworks */ = {isa = PBXBuildFile; productRef = F85D83A729F9B27500ED92A0 /* VectorNest */; };
-		F8B611B629F9D08B009E8953 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = F8B611B529F9D08B009E8953 /* OpenAIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F85D83A829F9B27500ED92A0 /* VectorNest in Frameworks */,
-				F8B611B629F9D08B009E8953 /* OpenAIKit in Frameworks */,
+				F84FCC082A214BF300C6E221 /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 			name = VectorDatabaseExample;
 			packageProductDependencies = (
 				F85D83A729F9B27500ED92A0 /* VectorNest */,
-				F8B611B529F9D08B009E8953 /* OpenAIKit */,
+				F84FCC072A214BF300C6E221 /* OpenAIKit */,
 			);
 			productName = VectorDatabaseExample;
 			productReference = F85D838E29F970C500ED92A0 /* VectorDatabaseExample.app */;
@@ -132,7 +132,7 @@
 			);
 			mainGroup = F85D838529F970C500ED92A0;
 			packageReferences = (
-				F8B611B429F9D08B009E8953 /* XCRemoteSwiftPackageReference "openai-kit" */,
+				F84FCC062A214BF300C6E221 /* XCRemoteSwiftPackageReference "openai-kit" */,
 			);
 			productRefGroup = F85D838F29F970C500ED92A0 /* Products */;
 			projectDirPath = "";
@@ -359,25 +359,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F8B611B429F9D08B009E8953 /* XCRemoteSwiftPackageReference "openai-kit" */ = {
+		F84FCC062A214BF300C6E221 /* XCRemoteSwiftPackageReference "openai-kit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dylanshine/openai-kit";
+			repositoryURL = "http://github.com/ronaldmannak/openai-kit.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				branch = feature/errordescription;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F84FCC072A214BF300C6E221 /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F84FCC062A214BF300C6E221 /* XCRemoteSwiftPackageReference "openai-kit" */;
+			productName = OpenAIKit;
+		};
 		F85D83A729F9B27500ED92A0 /* VectorNest */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = VectorNest;
-		};
-		F8B611B529F9D08B009E8953 /* OpenAIKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F8B611B429F9D08B009E8953 /* XCRemoteSwiftPackageReference "openai-kit" */;
-			productName = OpenAIKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

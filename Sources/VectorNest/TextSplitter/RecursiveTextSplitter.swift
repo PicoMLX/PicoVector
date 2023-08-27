@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import GPTEncoder
+import CleverBird
 
-public struct RecursiveTextSplitter: TextSplitter {   
+// FIXME: Make actor?
+public struct RecursiveTextSplitter: TextSplitter {
     
     public let lengthFunction: (String) -> Int
     
