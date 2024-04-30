@@ -1,4 +1,4 @@
-# VectorNest
+# Pico Vector
 
 VectorNest is a privacy-first local vector database. Essentially, it serves as a long-term memory for LLMs. VectorNest is designed to be LLM-agnostic. This means that it can work seamlessly with any existing and future LLM. The major benefit of this approach is that VectorNest will be able to grow alongside future AI developments, always staying relevant and efficient.
 
